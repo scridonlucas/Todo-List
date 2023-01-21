@@ -1,7 +1,9 @@
 import Project from './Project';
 import Task from './Task';
-import Storage from './Storage';
+import { saveData, retrieveData } from './Storage';
 
-export default function test() {
-  console.log('Working');
-}
+const addProjectBtn = document.querySelector('.add-project');
+addProjectBtn.addEventListener('click', addProject);
+
+function addProject() {}
+export default function test() {}
