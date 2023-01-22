@@ -15,6 +15,14 @@ h3 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
 .nav-bar {
   background-color: #292524;
   display: flex;
@@ -33,7 +41,7 @@ h3 {
 
 .dashboard {
   background-color: #d6d3d1;
-  width: 25vw;
+  width: 20vw;
   display: flex;
   flex-direction: column;
 }
@@ -59,9 +67,66 @@ h3 {
 
 .main {
   background-color: #e7e5e4;
-  width: 75vw;
+  width: 80vw;
 }
 
 .dashboard-project-title {
   margin-bottom: 20px;
+}
+
+.project-input {
+  border-radius: 5px;
+  height: 25px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+input:required {
+  outline: none;
+  border: 1px solid #a8a29e;
+}
+
+input:invalid:focus {
+  outline: none;
+  border: 2px solid red;
+}
+
+input:valid:focus {
+  outline: none;
+  border: 2px solid green;
+}
+
+.add-cancel {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+.project-add-button,
+.project-cancel-button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border-width: 0;
+  font-weight: bold;
+}
+
+.project-add-button {
+  background-color: #84cc16;
+}
+
+.project-add-button:hover {
+  background-color: #a3e635;
+}
+
+.project-cancel-button {
+  background-color: #ef4444;
+}
+
+.project-cancel-button:hover {
+  background-color: #f87171;
+}
+
+.add-project-container {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,2 +1,2 @@
-import test from './modules/UI';
-test();
+import { loadProjectsDOM } from './modules/UI';
+loadProjectsDOM();
