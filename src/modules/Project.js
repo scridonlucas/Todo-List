@@ -20,6 +20,10 @@ export default class Project {
     this.tasks = tasks;
   }
 
+  removeTask(removedTaskName) {
+    return this.tasks.filter((task) => task.title != removedTaskName);
+  }
+
   getTasks() {
     return this.tasks;
   }

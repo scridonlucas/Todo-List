@@ -9,6 +9,9 @@ function saveData(project) {
 }
 
 function retrieveData(projectName) {
+  if (!localStorage.getItem(`${projectName}`)) {
+    return new Project('');
+  }
   // recuperam obiectul din localStorage
   let project_deserialized = JSON.parse(localStorage.getItem(`${projectName}`));
   retrieveMethods(project_deserialized); // prin aceasta metoda atasam iar obiectului metodele pierdute cand s-a stocat in localStorage
@@ -24,7 +27,10 @@ function retrieveMethods(recievedProject) {
   cat si datele despre fiecare task. Am folosit o abordare diferita fata de prima pentru a le experimenta pe ambele */
 }
 
-export { saveData, retrieveData };
+function removeData(recievedProject) {
+  localStorage.removeItem(`${recievedProject}`);
+}
+export { saveData, retrieveData, removeData };
 
 /*
 O alta abordare ar fi crearea unui sir projects pe care sa-l stocam in localStorage si in care sa adaugam proiectele.

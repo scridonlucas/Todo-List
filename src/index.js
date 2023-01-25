@@ -1,2 +1,2 @@
-import loadPageDOM from './modules/UI';
-loadPageDOM();
+import loadPage from './modules/UI';
+document.addEventListener('DOMContentLoaded', loadPage);
