@@ -2,8 +2,13 @@
 
 Todo-List application using HTML, CSS and Javascript.
 
+<<<<<<< HEAD
 - [Live Preview](https://scridonlucas.github.io/Todo_List)
 
+=======
+ - [Live Preview](https://scridonlucas.github.io/Todo-List/)
+ 
+>>>>>>> c8f9388f1f825abb08aec0834c8072339321f473
 ## Features
 
 ### Features
