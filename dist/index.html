@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo-list</title>
+    <link rel="icon" type="image" href="/dist/images/to-do-list.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,21 +14,55 @@
     </div>
     <div class="middle">
       <div class="dashboard">
-        <div class="buttons">
-          <div class="button"><img src="images/inbox.png" />All</div>
-          <div class="button"><img src="images/calendar.png" />Today</div>
-          <div class="button">
-            <img src="images/calendar-week.png" />This week
-          </div>
-        </div>
         <div class="buttons second-buttons">
           <h3 class="dashboard-project-title">Projects</h3>
         </div>
       </div>
-      <div class="main">
-        <h3 class="main-title">All</h3>
-      </div>
+      <div class="main"></div>
     </div>
+        <div class="modal">
+      <div class="modal-content">
+        <form id="add-task" action="#" method="post">
+          <h2>Add New Task</h2>
+          <div class="close-button">✖</div>
+          <div class="input">
+            <input
+              type="text"
+              id="form-title"
+              name="form-title"
+              placeholder="Title"
+              required
+            />
+          </div>
+
+          <div class="input">
+              <textarea 
+                id="form-description" 
+                name="form-description" 
+                placeholder="Description"
+                required
+              ></textarea>
+
+          </div>
+          <div class="input">
+            <input
+              type="date"
+              id="form-date"
+              name="form-date"
+              placeholder="Date"
+              required
+            />
+          </div>
+          <div class="input">
+          <select id="form-priority" name="form-priority" required>
+            <option value="" disabled selected>Select Priority</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+          </div>
+          <button class="add-button" type="submit" form="add-task">Add</button>
+        </form>
     <script src="main.js"></script>
   </body>
 </html>
